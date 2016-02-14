@@ -1,0 +1,29 @@
+{
+	"always_show_minimap_viewport": true,
+	"atomic_save": false,
+	"bold_folder_labels": true,
+	"caret_style": "phase",
+	"close_windows_when_empty": true,
+	"color_scheme": "Packages/User/SublimeLinter/Mac Classic (SL).tmTheme",
+	"draw_white_space": "all",
+	"enable_tab_scrolling": false,
+	"ensure_newline_at_eof_on_save": true,
+	"font_size": 9,
+	"highlight_line": true,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"indent_guide_options":
+	[
+		"draw_active"
+	],
+	"rulers":
+	[
+		79,
+		99
+	],
+	"scroll_speed": 0,
+	"translate_tabs_to_spaces": true,
+	"trim_trailing_white_space_on_save": true
+}
