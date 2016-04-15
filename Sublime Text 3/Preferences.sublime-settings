@@ -10,6 +10,7 @@
 	"ensure_newline_at_eof_on_save": true,
 	"font_size": 9,
 	"highlight_line": true,
+	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
 		"Vintage"
@@ -23,7 +24,10 @@
 		79,
 		99
 	],
+	"overlay_scroll_bars": "disabled",
 	"scroll_speed": 0,
+	"show_encoding": true,
+	"show_full_path": true,
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true
 }

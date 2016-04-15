@@ -1,0 +1,7 @@
+<snippet>
+  <content><![CDATA[
+binding.remote_pry
+]]></content>
+  <tabTrigger>rpry</tabTrigger>
+  <scope>source.ruby</scope>
+</snippet>
