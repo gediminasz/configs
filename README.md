@@ -3,7 +3,7 @@
 App | Path
 --- | ---
 Sublime Text 3 | `C:\Users\USERNAME\AppData\Roaming\Sublime Text 3\Packages\User\`
-Visual Studio Code | `C:\Users\USERNAME\AppData\Roaming\Code\User\settings.json`
+Visual Studio Code | `C:\Users\USERNAME\AppData\Roaming\Code\User\`
 
 
 ### OSX
