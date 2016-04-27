@@ -1,0 +1,10 @@
+[
+    {
+        "key": "ctrl+]",
+        "command": "workbench.files.action.openNextWorkingFile"
+    },
+    {
+        "key": "ctrl+[",
+        "command": "workbench.files.action.openPreviousWorkingFile"
+    }
+]
