@@ -1,0 +1,48 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "0.1.0",
+    "command": "bash",
+    "isShellCommand": true,
+    "args": ["-c"],
+    "showOutput": "always",
+    "tasks": [
+        {
+            "taskName": "test (reusing database)",
+            "suppressTaskName": true,
+            "args": [
+                "PATH=venv/bin REUSE_DB=1 ./manage.py test --logging-clear-handlers --logging-filter=WARN,ERROR,CRITICAL --noinput ${file}"
+            ],
+            "isBuildCommand": true,
+            "isTestCommand": true
+        },
+        {
+            "taskName": "test verbose (reusing database)",
+            "suppressTaskName": true,
+            "args": [
+                "PATH=venv/bin REUSE_DB=1 ./manage.py test --logging-clear-handlers --logging-filter=WARN,ERROR,CRITICAL --noinput --verbosity=3 ${file}"
+            ]
+        },
+        {
+            "taskName": "test with coverage (reusing database)",
+            "suppressTaskName": true,
+            "args": [
+                "PATH=venv/bin REUSE_DB=1 ./manage.py test --logging-clear-handlers --logging-filter=WARN,ERROR,CRITICAL --noinput --with-coverage --cover-html ${file}"
+            ]
+        },
+        {
+            "taskName": "test",
+            "suppressTaskName": true,
+            "args": [
+                "PATH=venv/bin ./manage.py test --noinput ${file}"
+            ]
+        },
+        {
+            "taskName": "git blame",
+            "suppressTaskName": true,
+            "args": [
+                "git blame ${file}"
+            ]
+        }
+    ]
+}
