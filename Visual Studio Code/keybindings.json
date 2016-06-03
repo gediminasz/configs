@@ -1,10 +1,26 @@
 [
     {
-        "key": "ctrl+]",
+        "key": "cmd+shift+]",
         "command": "workbench.files.action.openNextWorkingFile"
     },
     {
-        "key": "ctrl+[",
+        "key": "cmd+shift+[",
         "command": "workbench.files.action.openPreviousWorkingFile"
+    },
+    {
+        "key": "cmd+.",
+        "command": "workbench.action.minimizeOtherEditors"
+    },
+    {
+        "key": "shift+cmd+.",
+        "command": "workbench.action.evenEditorWidths"
+    },
+    {
+        "key": "shift+cmd+x",
+        "command": "workbench.action.output.toggleOutput"
+    },
+    {
+        "key": "shift+cmd+r",
+        "command": "workbench.action.tasks.runTask"
     }
 ]
