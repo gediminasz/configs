@@ -2,5 +2,6 @@
     "editor.rulers": [79, 99],
     "editor.renderWhitespace": true,
     "window.openFilesInNewWindow": false,
-    "files.trimTrailingWhitespace": true
+    "files.trimTrailingWhitespace": true,
+    "terminal.integrated.shell.osx": "python"
 }

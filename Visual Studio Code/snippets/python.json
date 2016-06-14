@@ -27,11 +27,32 @@
         ],
         "description": "PuDB debugger (https://pypi.python.org/pypi/pudb)."
     },
+    "ipdb": {
+        "prefix": "ipdb",
+        "body": [
+            "from ipdb import set_trace; set_trace()"
+        ],
+        "description": "IPython debugger (https://pypi.python.org/pypi/ipdb)."
+    },
     "pp": {
         "prefix": "pprint",
         "body": [
             "from pprint import pprint as pp"
         ],
         "description": "Import pprint as pp"
+    },
+    "q": {
+        "prefix": "q",
+        "body": [
+            "import q; q($1)"
+        ],
+        "description": "Check output in tail -f /tmp/q or tail -f /$TMPDIR/q. https://pypi.python.org/pypi/q"
+    },
+    "akw": {
+        "prefix": "akw",
+        "body": [
+            "*args, **kwargs"
+        ],
+        "description": "*args, **kwargs"
     }
 }
