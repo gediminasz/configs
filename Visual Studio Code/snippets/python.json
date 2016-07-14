@@ -37,7 +37,8 @@
     "pp": {
         "prefix": "pprint",
         "body": [
-            "from pprint import pprint as pp"
+            "from pprint import pprint as pp",
+            "pp($1)"
         ],
         "description": "Import pprint as pp"
     },
