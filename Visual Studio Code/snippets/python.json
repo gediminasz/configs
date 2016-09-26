@@ -55,5 +55,22 @@
             "*args, **kwargs"
         ],
         "description": "*args, **kwargs"
+    },
+    "test": {
+        "prefix": "test",
+        "body": [
+            "def test_$1(self):",
+            "    $2"
+        ],
+        "description": "def test_foo(self): ..."
+    },
+    "property": {
+        "prefix": "property",
+        "body": [
+            "@property",
+            "def $1(self):",
+            "    $2"
+        ],
+        "description": "@property"
     }
 }
