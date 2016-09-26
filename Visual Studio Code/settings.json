@@ -3,5 +3,17 @@
     "editor.renderWhitespace": true,
     "window.openFilesInNewWindow": false,
     "files.trimTrailingWhitespace": true,
-    "terminal.integrated.shell.osx": "python"
+    "editor.fontSize": 11,
+    "terminal.integrated.shell.osx": "python",
+
+    // Extensions
+
+    "python.linting.pylintEnabled": false,
+    "python.linting.flake8Enabled": true,
+    "python.unitTest.unittestEnabled": false,
+
+    "blankLine.showMessage": false,
+
+    "annotator.annotationColumnWidth": "20em",
+    "annotator.annotationCommitColorBarWidth": "1em"
 }
