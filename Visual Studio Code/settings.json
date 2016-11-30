@@ -1,15 +1,15 @@
 {
-    "editor.rulers": [79, 99],
-    "editor.renderWhitespace": true,
-    "window.openFilesInNewWindow": false,
-    "files.trimTrailingWhitespace": true,
     "editor.fontSize": 11,
+    "editor.renderWhitespace": true,
+    "editor.rulers": [79, 99],
+    "files.trimTrailingWhitespace": true,
     "terminal.integrated.shell.osx": "python",
+    "window.openFilesInNewWindow": false,
 
     // Extensions
 
-    "python.linting.pylintEnabled": false,
     "python.linting.flake8Enabled": true,
+    "python.linting.pylintEnabled": false,
     "python.unitTest.unittestEnabled": false,
 
     "blankLine.showMessage": false,
