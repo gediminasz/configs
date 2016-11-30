@@ -26,5 +26,13 @@
     {
         "key": "alt+shift+p",
         "command": "workbench.action.openRecent"
+    },
+    {
+        "key": "cmd+shift+,",
+        "command": "workbench.action.toggleMaximizedPanel"
+    },
+    {
+        "key": "cmd+;",
+        "command": "editor.action.showSnippets"
     }
 ]

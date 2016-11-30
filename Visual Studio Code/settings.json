@@ -1,16 +1,15 @@
 {
+    "editor.cursorBlinking": "smooth",
     "editor.fontSize": 11,
-    "editor.renderWhitespace": true,
+    "editor.renderIndentGuides": true,
+    "editor.renderWhitespace": "all",
     "editor.rulers": [79, 99],
+    "extensions.autoUpdate": true,
     "files.trimTrailingWhitespace": true,
     "terminal.integrated.shell.osx": "python",
     "window.openFilesInNewWindow": false,
 
     // Extensions
-
-    "python.linting.flake8Enabled": true,
-    "python.linting.pylintEnabled": false,
-    "python.unitTest.unittestEnabled": false,
 
     "blankLine.showMessage": false,
 
