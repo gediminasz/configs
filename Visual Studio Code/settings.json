@@ -3,16 +3,24 @@
     "editor.fontSize": 11,
     "editor.renderIndentGuides": true,
     "editor.renderWhitespace": "all",
-    "editor.rulers": [79, 99],
+    "editor.rulers": [79, 120],
     "extensions.autoUpdate": true,
+    "files.insertFinalNewline": true,
     "files.trimTrailingWhitespace": true,
     "terminal.integrated.shell.osx": "python",
     "window.openFilesInNewWindow": false,
+    "window.showFullPath": true,
 
     // Extensions
 
-    "blankLine.showMessage": false,
+    "python.autoComplete.extraPaths": [
+        // "/path/to/some/virtualenv/lib/python2.7/site-packages"
+    ],
+    "python.linting.pylintEnabled": false,
+    "python.linting.flake8Enabled": true,
 
     "annotator.annotationColumnWidth": "20em",
-    "annotator.annotationCommitColorBarWidth": "1em"
+    "annotator.annotationCommitColorBarWidth": "1em",
+
+    "gitlens.codeLens.visibility": "ondemand"
 }
