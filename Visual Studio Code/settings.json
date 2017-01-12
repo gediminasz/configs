@@ -10,6 +10,7 @@
     "terminal.integrated.shell.osx": "python",
     "window.openFilesInNewWindow": false,
     "window.showFullPath": true,
+    "workbench.activityBar.visible": false,
 
     // Extensions
 
@@ -18,9 +19,23 @@
     ],
     "python.linting.pylintEnabled": false,
     "python.linting.flake8Enabled": true,
+    "python.linting.maxNumberOfProblems": 1000,
 
-    "annotator.annotationColumnWidth": "20em",
-    "annotator.annotationCommitColorBarWidth": "1em",
+    "gitlens.codeLens.visibility": "ondemand",
 
-    "gitlens.codeLens.visibility": "ondemand"
+    "todohighlight.isCaseSensitive": false,
+    "todohighlight.keywords": [
+        {
+            "text": "TODO",
+            "color": "white",
+            "backgroundColor": "orange",
+            "overviewRulerColor": "orange"
+        },
+        {
+            "text": "FIXME",
+            "color": "white",
+            "backgroundColor": "orange",
+            "overviewRulerColor": "orange"
+        }
+    ]
 }
