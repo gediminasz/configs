@@ -32,7 +32,19 @@
             "overviewRulerColor": "orange"
         },
         {
+            "text": "TODO:",
+            "color": "white",
+            "backgroundColor": "orange",
+            "overviewRulerColor": "orange"
+        },
+        {
             "text": "FIXME",
+            "color": "white",
+            "backgroundColor": "orange",
+            "overviewRulerColor": "orange"
+        },
+        {
+            "text": "FIXME:",
             "color": "white",
             "backgroundColor": "orange",
             "overviewRulerColor": "orange"
