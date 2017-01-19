@@ -1,0 +1,38 @@
+[
+    {
+        "key": "ctrl+shift+]",
+        "command": "workbench.action.nextEditor"
+    },
+    {
+        "key": "ctrl+shift+[",
+        "command": "workbench.action.previousEditor"
+    },
+    {
+        "key": "ctrl+.",
+        "command": "workbench.action.minimizeOtherEditors"
+    },
+    {
+        "key": "shift+ctrl+.",
+        "command": "workbench.action.evenEditorWidths"
+    },
+    {
+        "key": "shift+ctrl+x",
+        "command": "workbench.action.output.toggleOutput"
+    },
+    {
+        "key": "shift+ctrl+r",
+        "command": "workbench.action.tasks.runTask"
+    },
+    {
+        "key": "alt+shift+p",
+        "command": "workbench.action.openRecent"
+    },
+    {
+        "key": "ctrl+shift+,",
+        "command": "workbench.action.toggleMaximizedPanel"
+    },
+    {
+        "key": "ctrl+;",
+        "command": "editor.action.showSnippets"
+    }
+]
