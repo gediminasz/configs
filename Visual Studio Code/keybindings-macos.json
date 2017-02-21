@@ -34,5 +34,9 @@
     {
         "key": "cmd+;",
         "command": "editor.action.showSnippets"
+    },
+    {
+        "key": "cmd+i",
+        "command": "editor.action.triggerSuggest"
     }
 ]

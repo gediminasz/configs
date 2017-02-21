@@ -2,52 +2,65 @@
     "editor.cursorBlinking": "smooth",
     "editor.fontSize": 11,
     "editor.renderIndentGuides": true,
+    "editor.renderLineHighlight": "all",
     "editor.renderWhitespace": "all",
-    "editor.rulers": [79, 120],
     "extensions.autoUpdate": true,
     "files.insertFinalNewline": true,
     "files.trimTrailingWhitespace": true,
     "terminal.integrated.shell.osx": "python",
-    "window.openFilesInNewWindow": false,
+    "window.openFilesInNewWindow": "off",
     "window.showFullPath": true,
     "workbench.activityBar.visible": false,
+    "workbench.editor.tabCloseButton": "off",
+    "workbench.quickOpen.closeOnFocusLost": false,
+
+    "[python]": {
+        "editor.rulers": [79]
+    },
 
     // Extensions
 
-    "python.autoComplete.extraPaths": [
-        // "/path/to/some/virtualenv/lib/python2.7/site-packages"
-    ],
+    "python.autoComplete.extraPaths": [],
     "python.linting.pylintEnabled": false,
     "python.linting.flake8Enabled": true,
     "python.linting.maxNumberOfProblems": 1000,
 
+    "gitlens.blame.annotation.activeLine": "hover",
+    "gitlens.blame.annotation.date": "relative",
+    "gitlens.blame.annotation.style": "expanded",
     "gitlens.codeLens.visibility": "ondemand",
 
     "todohighlight.isCaseSensitive": false,
     "todohighlight.keywords": [
         {
+            "text": "TODO GZL",
+            "color": "white",
+            "backgroundColor": "darkorange",
+            "overviewRulerColor": "darkorange"
+        },
+        {
             "text": "TODO",
             "color": "white",
-            "backgroundColor": "orange",
-            "overviewRulerColor": "orange"
+            "backgroundColor": "darkorange",
+            "overviewRulerColor": "darkorange"
         },
         {
             "text": "TODO:",
             "color": "white",
-            "backgroundColor": "orange",
-            "overviewRulerColor": "orange"
+            "backgroundColor": "darkorange",
+            "overviewRulerColor": "darkorange"
         },
         {
             "text": "FIXME",
             "color": "white",
-            "backgroundColor": "orange",
-            "overviewRulerColor": "orange"
+            "backgroundColor": "darkorange",
+            "overviewRulerColor": "darkorange"
         },
         {
             "text": "FIXME:",
             "color": "white",
-            "backgroundColor": "orange",
-            "overviewRulerColor": "orange"
+            "backgroundColor": "darkorange",
+            "overviewRulerColor": "darkorange"
         }
     ]
 }
