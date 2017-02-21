@@ -2,6 +2,8 @@
 source ~/.git-prompt.sh
 PS1='\[\e[1m\][\t] \w$(__git_ps1 " (%s)") \$ \[\e[0m\]'
 
+source ~/.git-completion.bash
+
 alias ..='cd ..'
 alias sl='gls --almost-all --color --classify --human-readable -l -X' # brew install coreutils
 alias tl='tree -L 5 -C' # brew install tree
@@ -12,12 +14,20 @@ alias tailq='tail -f /$TMPDIR/q' # https://pypi.python.org/pypi/q
 alias g='git'
 alias l='git log --decorate'
 alias s='git status'
-alias d='python /Library/Python/2.7/site-packages/cdiff.py -s -w 120'  # pip install cdiff
+alias d='python /Library/Python/2.7/site-packages/cdiff.py -s -w 120 --ignore-all-space'  # pip install cdiff
 alias dca='d --cached'
 alias dbr='d master..'  # diff between master and a specified branch (e.g. dbr features/my_branch)
 alias dlc='l -n 1 | git show | d'  # show diff of last commit (inspect changes before pushing)
 alias gamend='git commit --amend --no-edit'
 
+
+# # virtualenvwrapper
+# export WORKON_HOME=$HOME/.virtualenvs
+# export PROJECT_HOME=$HOME/dev
+# source $HOME/Library/Python/2.7/bin/virtualenvwrapper.sh
+
+
+# eval "$(rbenv init -)"
 
 
 # iTerm2>Install Shell Integration
