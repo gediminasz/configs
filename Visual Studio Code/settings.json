@@ -1,6 +1,7 @@
 {
     "editor.cursorBlinking": "smooth",
     "editor.fontSize": 11,
+    "editor.minimap.enabled": true,
     "editor.renderIndentGuides": true,
     "editor.renderLineHighlight": "all",
     "editor.renderWhitespace": "all",
@@ -9,7 +10,7 @@
     "files.trimTrailingWhitespace": true,
     "terminal.integrated.shell.osx": "python",
     "window.openFilesInNewWindow": "off",
-    "window.showFullPath": true,
+    "window.title": "${dirty}${activeEditorMedium}${separator}${rootName}",
     "workbench.activityBar.visible": false,
     "workbench.editor.tabCloseButton": "off",
     "workbench.quickOpen.closeOnFocusLost": false,
