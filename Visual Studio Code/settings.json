@@ -12,6 +12,7 @@
     "window.openFilesInNewWindow": "off",
     "window.title": "${dirty}${activeEditorMedium}${separator}${rootName}",
     "workbench.activityBar.visible": false,
+    "workbench.colorTheme": "Visual Studio Light",
     "workbench.editor.tabCloseButton": "off",
     "workbench.quickOpen.closeOnFocusLost": false,
 
