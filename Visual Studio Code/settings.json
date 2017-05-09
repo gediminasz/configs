@@ -14,10 +14,10 @@
     "workbench.activityBar.visible": false,
     "workbench.colorTheme": "Visual Studio Light",
     "workbench.editor.tabCloseButton": "off",
-    "workbench.experimental.colorCustomizations": {
-        "editorLineHighlight": "#eeeeee",
-        "editorSelectionHighlight": "#ffdd00",
-        "statusBarBackground": "#000000"
+    "workbench.colorCustomizations": {
+        "editor.lineHighlightBackground": "#eeeeee",
+        "editor.selectionHighlightBackground": "#ffdd00",
+        "statusBar.background": "#000000"
     },
     "workbench.iconTheme": "vs-minimal",
     "workbench.quickOpen.closeOnFocusLost": false,
