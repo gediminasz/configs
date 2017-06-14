@@ -37,10 +37,7 @@
     "python.linting.flake8Enabled": true,
     "python.linting.maxNumberOfProblems": 1000,
 
-    "gitlens.blame.annotation.activeLine": "hover",
-    "gitlens.blame.annotation.date": "relative",
-    "gitlens.blame.annotation.style": "expanded",
-    "gitlens.codeLens.visibility": "ondemand",
+    "gitlens.blame.line.annotationType": "hover",
 
     "todohighlight.isCaseSensitive": false,
     "todohighlight.keywords": [
