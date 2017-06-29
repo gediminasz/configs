@@ -38,5 +38,9 @@
     {
         "key": "cmd+i",
         "command": "editor.action.triggerSuggest"
+    },
+    {
+        "key": "shift+cmd+f",
+        "command": "workbench.action.findInFiles"
     }
 ]
