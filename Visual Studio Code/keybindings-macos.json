@@ -17,7 +17,7 @@
     },
     {
         "key": "shift+cmd+x",
-        "command": "workbench.action.output.toggleOutput"
+        "command": "workbench.action.terminal.toggleTerminal"
     },
     {
         "key": "shift+cmd+r",

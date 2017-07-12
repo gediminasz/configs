@@ -17,7 +17,9 @@
     "workbench.colorCustomizations": {
         "editor.lineHighlightBackground": "#eeeeee",
         "editor.selectionHighlightBackground": "#ffdd00",
-        "statusBar.background": "#000000"
+        "statusBar.background": "#000000",
+        "terminal.background": "#000000",
+        "terminal.foreground": "#ffffff"
     },
     "workbench.iconTheme": "vs-minimal",
     "workbench.quickOpen.closeOnFocusLost": false,
