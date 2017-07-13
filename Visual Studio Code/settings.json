@@ -25,11 +25,7 @@
     "workbench.quickOpen.closeOnFocusLost": false,
 
     "[python]": {
-        "editor.rulers": [79]
-    },
-
-    "[javascript]": {
-        "editor.rulers": [119]
+        "editor.rulers": [80]
     },
 
     // Extensions
