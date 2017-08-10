@@ -1,3 +1,5 @@
+HISTSIZE=10000
+
 # https://github.com/git/git/blob/8976500cbbb13270398d3b3e07a17b8cc7bff43f/contrib/completion/git-prompt.sh
 source ~/.git-prompt.sh
 PS1='\[\e[1m\][\t] \w$(__git_ps1 " (%s)") \$ \[\e[0m\]'
