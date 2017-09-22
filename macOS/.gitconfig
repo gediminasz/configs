@@ -1,0 +1,10 @@
+[user]
+    name = {NAME}
+    email = {EMAIl}
+[merge]
+    conflictstyle = diff3
+[alias]
+    ci = commit
+    co = checkout
+    chr = cherry-pick
+    br = branch
