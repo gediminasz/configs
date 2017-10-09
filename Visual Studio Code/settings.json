@@ -1,5 +1,5 @@
 {
-    "editor.cursorBlinking": "smooth",
+    "editor.cursorBlinking": "solid",
     "editor.fontSize": 11,
     "editor.minimap.enabled": false,
     "editor.renderIndentGuides": true,
@@ -8,7 +8,6 @@
     "extensions.autoUpdate": true,
     "files.insertFinalNewline": true,
     "files.trimTrailingWhitespace": true,
-    "terminal.integrated.shell.osx": "python",
     "window.openFilesInNewWindow": "off",
     "window.title": "${dirty}${activeEditorMedium}${separator}${rootName}",
     "workbench.activityBar.visible": false,
@@ -17,8 +16,10 @@
     "workbench.colorCustomizations": {
         "editor.lineHighlightBackground": "#eeeeee",
         "editor.selectionHighlightBackground": "#ffdd00",
+        "editorBracketMatch.background": "#ffdd00",
+        "editorBracketMatch.border": "#ffdd00",
         "statusBar.background": "#000000",
-        "terminal.background": "#000000",
+        "terminal.background": "#222222",
         "terminal.foreground": "#ffffff"
     },
     "workbench.iconTheme": "vs-minimal",
@@ -31,11 +32,10 @@
     // Extensions
 
     "python.autoComplete.extraPaths": [],
+    "python.autoComplete.preloadModules": [],
     "python.linting.pylintEnabled": false,
     "python.linting.flake8Enabled": true,
     "python.linting.maxNumberOfProblems": 1000,
-
-    "gitlens.blame.line.annotationType": "hover",
 
     "todohighlight.isCaseSensitive": false,
     "todohighlight.keywords": [
