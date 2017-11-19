@@ -17,7 +17,7 @@
     },
     {
         "key": "shift+ctrl+x",
-        "command": "workbench.action.output.toggleOutput"
+        "command": "workbench.action.terminal.toggleTerminal"
     },
     {
         "key": "shift+ctrl+r",
@@ -34,5 +34,17 @@
     {
         "key": "ctrl+;",
         "command": "editor.action.showSnippets"
+    },
+    {
+        "key": "ctrl+i",
+        "command": "editor.action.triggerSuggest"
+    },
+    {
+        "key": "shift+ctrl+f",
+        "command": "workbench.action.findInFiles"
+    },
+    {
+        "key": "ctrl+shift+g",
+        "command": "workbench.view.scm"
     }
 ]
