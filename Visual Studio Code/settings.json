@@ -1,10 +1,11 @@
 {
     "editor.cursorBlinking": "solid",
-    "editor.fontSize": 11,
     "editor.minimap.enabled": false,
     "editor.renderIndentGuides": true,
     "editor.renderLineHighlight": "all",
     "editor.renderWhitespace": "all",
+    "editor.rulers": [80],
+    "editor.tabSize": 4,
     "extensions.autoUpdate": true,
     "files.insertFinalNewline": true,
     "files.trimTrailingWhitespace": true,
@@ -25,17 +26,15 @@
     "workbench.iconTheme": "vs-minimal",
     "workbench.quickOpen.closeOnFocusLost": false,
 
-    "[python]": {
-        "editor.rulers": [80]
+    "[ruby]": {
+        "editor.tabSize": 2
+    },
+
+    "[elixir]": {
+        "editor.tabSize": 2
     },
 
     // Extensions
-
-    "python.autoComplete.extraPaths": [],
-    "python.autoComplete.preloadModules": [],
-    "python.linting.pylintEnabled": false,
-    "python.linting.flake8Enabled": true,
-    "python.linting.maxNumberOfProblems": 1000,
 
     "todohighlight.isCaseSensitive": false,
     "todohighlight.keywords": [
