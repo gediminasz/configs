@@ -9,5 +9,7 @@
     chr = cherry-pick
     cm = commit -m
     co = checkout
+    d = diff
+    dca = diff --cached
     l = log --decorate
     s = status

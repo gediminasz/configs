@@ -17,7 +17,6 @@ alias d='python /Library/Python/2.7/site-packages/cdiff.py -s -w 120 --ignore-al
 alias dca='d --cached'
 alias dbr='d master..'  # diff between master and a specified branch (e.g. dbr features/my_branch)
 alias dlc='l -n 1 | git show -w | d'  # show diff of last commit (inspect changes before pushing)
-alias gamend='git commit --amend --no-edit'
 
 ## virtualenvwrapper
 # export WORKON_HOME=$HOME/.virtualenvs
