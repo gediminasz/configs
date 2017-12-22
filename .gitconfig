@@ -4,7 +4,10 @@
 [merge]
     conflictstyle = diff3
 [alias]
-    ci = commit
-    co = checkout
-    chr = cherry-pick
     br = branch
+    cam = commit --amend --no-edit
+    chr = cherry-pick
+    cm = commit -m
+    co = checkout
+    l = log --decorate
+    s = status
