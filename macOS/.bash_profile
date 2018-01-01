@@ -18,6 +18,8 @@ alias dca='d --cached'
 alias dbr='d master..'  # diff between master and a specified branch (e.g. dbr features/my_branch)
 alias dlc='l -n 1 | git show -w | d'  # show diff of last commit (inspect changes before pushing)
 
+alias be='bundle exec'
+
 ## virtualenvwrapper
 # export WORKON_HOME=$HOME/.virtualenvs
 # export PROJECT_HOME=$HOME/dev
