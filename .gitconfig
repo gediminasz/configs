@@ -13,3 +13,5 @@
     dca = diff --cached
     l = log --decorate
     s = status
+[push]
+    default = simple
