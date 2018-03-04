@@ -1,0 +1,74 @@
+{
+    "{{ ... }}": {
+        "prefix": "var",
+        "body": "{{ $1 }}"
+    },
+    "{% ... %}": {
+        "prefix": "tag",
+        "body": "{% $1 %}"
+    },
+    "{# ... #}": {
+        "prefix": "comment",
+        "body": "{# $1 #}"
+    },
+    "{% comment %} ... {% endcomment %}": {
+        "prefix": "commentblock",
+        "body": [
+            "{% comment %}",
+            "$1{% endcomment %}"
+        ]
+    },
+    "{% block ... %}": {
+        "prefix": "block",
+        "body": [
+            "{% block $1 %}",
+            "$2",
+            "{% endblock %}"
+        ]
+    },
+    "{{ block.super }}": {
+        "prefix": "super",
+        "body": [
+            "{{ block.super }}"
+        ]
+    },
+    "{% if ... %}": {
+        "prefix": "if",
+        "body": [
+            "{% if $1 %}",
+            "$2",
+            "{% endif %}"
+        ]
+    },
+    "{% for ... %}": {
+        "prefix": "for",
+        "body": [
+            "{% for $1 in $2 %}",
+            "$3",
+            "{% endfor %}"
+        ]
+    },
+    "<% ... %>": {
+        "prefix": "jtag",
+        "body": "<% $1 %>"
+    },
+    "<%= ... %>": {
+        "prefix": "jval",
+        "body": "<%= $1 %>"
+    },
+    "<%- ... %>": {
+        "prefix": "jesc",
+        "body": "<%- $1 %>"
+    },
+    "table > tr > td": {
+        "prefix": "tt",
+        "body": [
+            "<table>",
+            "    <tr>",
+            "         <td>",
+            "         </td>",
+            "    </tr>",
+            "</table>"
+        ]
+    }
+}
