@@ -1,5 +1,7 @@
 {
+    "editor.autoIndent": false,
     "editor.cursorBlinking": "solid",
+    "editor.glyphMargin": false,
     "editor.minimap.enabled": false,
     "editor.renderIndentGuides": true,
     "editor.renderLineHighlight": "all",
@@ -32,6 +34,10 @@
 
     "[elixir]": {
         "editor.tabSize": 2
+    },
+
+    "[javascript]": {
+        "editor.rulers": [120]
     },
 
     // Extensions
