@@ -9,7 +9,6 @@ source ~/.git-completion.bash
 alias ..='cd ..'
 alias sl='gls --almost-all --color --classify --human-readable -l -X'  # brew install coreutils
 alias tl='tree -L 5 -C' # brew install tree
-alias notify="osascript -e 'display notification with title \"Complete!\"' }"  # OSX notification
 alias cgrep='grep --color -i -n'
 
 alias g='git'
@@ -17,8 +16,7 @@ alias d='python /Library/Python/2.7/site-packages/cdiff.py -s -w 120 --ignore-al
 alias dca='d --cached'
 alias dbr='d master..'  # diff between master and a specified branch (e.g. dbr features/my_branch)
 alias dlc='l -n 1 | git show -w | d'  # show diff of last commit (inspect changes before pushing)
-
-alias be='bundle exec'
+alias clean_pyc="find . -name '*.pyc' -delete"
 
 ## virtualenvwrapper
 # export WORKON_HOME=$HOME/.virtualenvs
@@ -30,5 +28,4 @@ alias be='bundle exec'
 
 # eval "$(rbenv init -)"
 
-## brew install pyenv
 # eval "$(pyenv init -)"
