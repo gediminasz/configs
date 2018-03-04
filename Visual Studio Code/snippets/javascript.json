@@ -1,0 +1,16 @@
+{
+    "console.debug": {
+        "prefix": "logdebug",
+        "body": [
+            "console.debug($1);"
+        ]
+    },
+    "method": {
+        "prefix": "method",
+        "body": [
+            "$1: function ($2) {",
+            "    $3",
+            "},"
+        ]
+    }
+}
