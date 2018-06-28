@@ -3,12 +3,14 @@
     "editor.cursorBlinking": "solid",
     "editor.glyphMargin": false,
     "editor.minimap.enabled": false,
+    "editor.minimap.showSlider": "always",
     "editor.renderIndentGuides": true,
     "editor.renderLineHighlight": "all",
     "editor.renderWhitespace": "all",
     "editor.rulers": [80],
     "editor.tabSize": 4,
     "extensions.autoUpdate": true,
+    "extensions.ignoreRecommendations": true,
     "files.insertFinalNewline": true,
     "files.trimTrailingWhitespace": true,
     "window.openFilesInNewWindow": "off",
@@ -23,7 +25,8 @@
         "editorBracketMatch.border": "#ffdd00",
         "statusBar.background": "#000000",
         "terminal.background": "#222222",
-        "terminal.foreground": "#ffffff"
+        "terminal.foreground": "#ffffff",
+        "terminal.selectionBackground": "#0011ff77"
     },
     "workbench.iconTheme": "vs-minimal",
     "workbench.quickOpen.closeOnFocusLost": false,
@@ -48,31 +51,26 @@
             "text": "TODO GZL",
             "color": "white",
             "backgroundColor": "darkorange",
-            "overviewRulerColor": "darkorange"
         },
         {
             "text": "TODO",
             "color": "white",
             "backgroundColor": "darkorange",
-            "overviewRulerColor": "darkorange"
         },
         {
             "text": "TODO:",
             "color": "white",
             "backgroundColor": "darkorange",
-            "overviewRulerColor": "darkorange"
         },
         {
             "text": "FIXME",
             "color": "white",
             "backgroundColor": "darkorange",
-            "overviewRulerColor": "darkorange"
         },
         {
             "text": "FIXME:",
             "color": "white",
             "backgroundColor": "darkorange",
-            "overviewRulerColor": "darkorange"
         }
     ]
 }
