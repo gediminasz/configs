@@ -1,10 +1,7 @@
 HISTSIZE=10000
 
-# https://github.com/git/git/blob/8976500cbbb13270398d3b3e07a17b8cc7bff43f/contrib/completion/git-prompt.sh
 source ~/.git-prompt.sh
 PS1='\[\e[1m\][\t] \w$(__git_ps1 " (%s)") \$ \[\e[0m\]'
-
-source ~/.git-completion.bash
 
 alias ..='cd ..'
 alias sl='gls --almost-all --color --classify --human-readable -l -X'  # brew install coreutils
@@ -18,14 +15,5 @@ alias dbr='d master..'  # diff between master and a specified branch (e.g. dbr f
 alias dlc='l -n 1 | git show -w | d'  # show diff of last commit (inspect changes before pushing)
 alias clean_pyc="find . -name '*.pyc' -delete"
 
-## virtualenvwrapper
-# export WORKON_HOME=$HOME/.virtualenvs
-# export PROJECT_HOME=$HOME/dev
-# source $HOME/Library/Python/2.7/bin/virtualenvwrapper.sh
-
-## iTerm2>Install Shell Integration
+# # iTerm2>Install Shell Integration
 # test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
-
-# eval "$(rbenv init -)"
-
-# eval "$(pyenv init -)"
