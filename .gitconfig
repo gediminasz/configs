@@ -12,6 +12,6 @@
     d = diff
     dca = diff --cached
     l = log --decorate
-    s = status
+    s = status --show-stash
 [push]
     default = simple
