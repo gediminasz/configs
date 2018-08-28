@@ -11,6 +11,9 @@
     "editor.tabSize": 4,
     "extensions.autoUpdate": true,
     "extensions.ignoreRecommendations": true,
+    "files.associations": {
+        "*.erb": "html"
+    },
     "files.insertFinalNewline": true,
     "files.trimTrailingWhitespace": true,
     "window.openFilesInNewWindow": "off",
