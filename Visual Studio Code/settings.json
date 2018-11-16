@@ -1,4 +1,5 @@
 {
+    "breadcrumbs.enabled": true,
     "editor.autoIndent": false,
     "editor.cursorBlinking": "solid",
     "editor.glyphMargin": false,
@@ -16,6 +17,7 @@
     },
     "files.insertFinalNewline": true,
     "files.trimTrailingWhitespace": true,
+    "terminal.integrated.rendererType": "canvas",
     "window.openFilesInNewWindow": "off",
     "window.title": "${dirty}${activeEditorMedium}${separator}${rootName}",
     "workbench.activityBar.visible": false,
@@ -45,6 +47,7 @@
     "[javascript]": {
         "editor.rulers": [120]
     },
+    "javascript.updateImportsOnFileMove.enabled": "always",
 
     // Extensions
 
@@ -75,5 +78,5 @@
             "color": "white",
             "backgroundColor": "darkorange",
         }
-    ]
+    ],
 }
