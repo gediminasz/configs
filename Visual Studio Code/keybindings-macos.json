@@ -46,5 +46,14 @@
     {
         "key": "cmd+shift+g",
         "command": "workbench.view.scm"
+    },
+    {
+        "key": "cmd+r",
+        "command": "workbench.action.tasks.runTask",
+        "args": "Test on cursor"
+    },
+    {
+        "key": "ctrl+m",
+        "command": "editor.action.toggleMinimap"
     }
 ]
