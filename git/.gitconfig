@@ -15,3 +15,5 @@
     s = status --show-stash
 [push]
     default = simple
+[core]
+    excludesfile = /Users/gediminaszlatkus/.gitignore
