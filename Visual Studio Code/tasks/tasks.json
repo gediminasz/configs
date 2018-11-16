@@ -1,0 +1,37 @@
+{
+    // https://code.visualstudio.com/Docs/editor/tasks
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Test all",
+            "type": "shell",
+            "command": "reset ; PATH=~/path/to/venv/bin REUSE_DB=1 NO_CACHE= NO_SCHEMA= python manage.py test --logging-clear-handlers --noinput --nocapture ${file}",
+            "problemMatcher": []
+        },
+        {
+            "label": "Test on cursor",
+            "type": "shell",
+            "command": "reset ; PATH=~/path/to/venv/bin REUSE_DB=1 NO_CACHE= NO_SCHEMA= python manage.py test --logging-clear-handlers --noinput --nocapture `python .untracked/resolve_test_identifier.py ${file} ${lineNumber}`",
+            "problemMatcher": [],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "Blame",
+            "type": "shell",
+            "command": "git blame --date=relative ${file}",
+            "presentation": {
+                "panel": "new"
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Blame line",
+            "type": "shell",
+            "command": "git blame --date=relative -L ${lineNumber},+1 ${file}",
+            "problemMatcher": []
+        }
+    ]
+}
