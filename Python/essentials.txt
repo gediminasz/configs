@@ -1,6 +1,8 @@
 flake8
+ipdb
 jupyter
 matplotlib
 numpy
 pandas
+pudb
 requests
