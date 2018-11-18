@@ -21,7 +21,6 @@
     "window.openFilesInNewWindow": "off",
     "window.title": "${dirty}${activeEditorMedium}${separator}${rootName}",
     "workbench.activityBar.visible": false,
-    "workbench.colorTheme": "Visual Studio Light",
     "workbench.editor.tabCloseButton": "off",
     "workbench.colorCustomizations": {
         "editor.lineHighlightBackground": "#eeeeee",
@@ -33,8 +32,10 @@
         "terminal.foreground": "#ffffff",
         "terminal.selectionBackground": "#0011ff77"
     },
+    "workbench.colorTheme": "Visual Studio Light",
     "workbench.iconTheme": "vs-minimal",
     "workbench.quickOpen.closeOnFocusLost": false,
+    "workbench.settings.editor": "json",
 
     "[ruby]": {
         "editor.tabSize": 2
