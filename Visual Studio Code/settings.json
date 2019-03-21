@@ -1,25 +1,43 @@
 {
     "breadcrumbs.enabled": true,
+
     "editor.autoIndent": false,
-    "editor.cursorBlinking": "solid",
-    "editor.glyphMargin": false,
+    "editor.formatOnSaveTimeout": 2000,
     "editor.minimap.enabled": false,
     "editor.minimap.showSlider": "always",
     "editor.renderIndentGuides": true,
     "editor.renderLineHighlight": "all",
     "editor.renderWhitespace": "all",
-    "editor.rulers": [80],
+    "editor.rulers": [88],
     "editor.tabSize": 4,
+
     "extensions.autoUpdate": true,
     "extensions.ignoreRecommendations": true,
+
     "files.associations": {
-        "*.erb": "html"
+        "*.erb": "html",
+        "Dockerfile.*": "dockerfile",
+        "*.sls": "yaml"
+    },
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "*.egg-info": true,
+        ".pytest_cache": true,
+        "**/__pycache__": true,
+        ".coverage": true,
     },
     "files.insertFinalNewline": true,
     "files.trimTrailingWhitespace": true,
+
     "terminal.integrated.rendererType": "canvas",
+
     "window.openFilesInNewWindow": "off",
     "window.title": "${dirty}${activeEditorMedium}${separator}${rootName}",
+
     "workbench.activityBar.visible": false,
     "workbench.editor.tabCloseButton": "off",
     "workbench.colorCustomizations": {
@@ -37,18 +55,23 @@
     "workbench.quickOpen.closeOnFocusLost": false,
     "workbench.settings.editor": "json",
 
+    "[python]": {
+        "editor.formatOnSave": true,
+    },
+
     "[ruby]": {
         "editor.tabSize": 2
     },
 
-    "[elixir]": {
-        "editor.tabSize": 2
-    },
-
     "[javascript]": {
-        "editor.rulers": [120]
+        "editor.rulers": [120],
+        "editor.formatOnSave": true,
     },
     "javascript.updateImportsOnFileMove.enabled": "always",
+
+    "[markdown]": {
+        "editor.formatOnSave": true,
+    },
 
     // Extensions
 
@@ -78,6 +101,22 @@
             "text": "FIXME:",
             "color": "white",
             "backgroundColor": "darkorange",
-        }
+        },
+        {
+            "text": "print",
+            "color": "white",
+            "backgroundColor": "deeppink",
+        },
+        {
+            "text": "@pytest.mark.x",
+            "color": "white",
+            "backgroundColor": "deeppink",
+        },
     ],
+
+    "python.formatting.provider": "black",
+    "python.formatting.blackPath": "/PATH/TO/black",
+    "python.linting.prospectorEnabled": true,
+    "python.linting.prospectorPath": "/PATH/TO/prospector",
+    "python.linting.pylintEnabled": false,
 }
