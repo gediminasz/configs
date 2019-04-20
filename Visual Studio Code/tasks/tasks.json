@@ -2,34 +2,6 @@
     // https://code.visualstudio.com/Docs/editor/tasks
     "version": "2.0.0",
     "tasks": [
-        // {
-        //     "label": "Test all",
-        //     "type": "shell",
-        //     "command": "reset ; PATH=~/path/to/venv/bin REUSE_DB=1 NO_CACHE= NO_SCHEMA= python manage.py test --logging-clear-handlers --noinput --nocapture ${file}",
-        //     "problemMatcher": []
-        // },
-        // {
-        //     "label": "Test on cursor",
-        //     "type": "shell",
-        //     "command": "reset ; PATH=~/path/to/venv/bin REUSE_DB=1 NO_CACHE= NO_SCHEMA= python manage.py test --logging-clear-handlers --noinput --nocapture `python .untracked/resolve_test_identifier.py ${file} ${lineNumber}`",
-        //     "problemMatcher": [],
-        //     "group": {
-        //         "kind": "build",
-        //         "isDefault": true
-        //     }
-        // },
-        {
-            "label": "Test all",
-            "type": "shell",
-            "command": "reset ; poetry run pytest --disable-pytest-warnings -v ${file}",
-            "problemMatcher": []
-        },
-        {
-            "label": "Test @pytest.mark.X",
-            "type": "shell",
-            "command": "reset ; poetry run pytest --disable-pytest-warnings -m 'x or X' -v ${file}",
-            "problemMatcher": []
-        },
         {
             "label": "Blame",
             "type": "shell",
