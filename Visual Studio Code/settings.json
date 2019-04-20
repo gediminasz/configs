@@ -10,6 +10,7 @@
     "editor.renderWhitespace": "all",
     "editor.rulers": [88],
     "editor.tabSize": 4,
+    "editor.codeLens": false,
 
     "extensions.autoUpdate": true,
     "extensions.ignoreRecommendations": true,
@@ -32,6 +33,8 @@
     },
     "files.insertFinalNewline": true,
     "files.trimTrailingWhitespace": true,
+
+    "git.enabled": false,
 
     "terminal.integrated.rendererType": "canvas",
 
@@ -115,8 +118,6 @@
     ],
 
     "python.formatting.provider": "black",
-    "python.formatting.blackPath": "/PATH/TO/black",
     "python.linting.prospectorEnabled": true,
-    "python.linting.prospectorPath": "/PATH/TO/prospector",
-    "python.linting.pylintEnabled": false,
+    "python.linting.pylintEnabled": false
 }
