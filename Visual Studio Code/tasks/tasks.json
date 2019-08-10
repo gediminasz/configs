@@ -16,6 +16,15 @@
             "type": "shell",
             "command": "git blame --date=relative -L ${lineNumber},+1 ${file}",
             "problemMatcher": []
+        },
+        {
+            "label": "Run ctags",
+            "type": "shell",
+            "command": "ctags -R -f .tags",
+            "problemMatcher": [],
+            "presentation": {
+                "reveal": "silent",
+            },
         }
     ]
 }
