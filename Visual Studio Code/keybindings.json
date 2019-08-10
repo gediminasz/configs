@@ -59,5 +59,9 @@
     {
         "key": "ctrl+j",
         "command": "editor.action.joinLines"
+    },
+    {
+        "key": "f12",
+        "command": "extension.searchCTags"
     }
 ]
