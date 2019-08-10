@@ -1,97 +1,103 @@
 {
-  "breadcrumbs.enabled": true,
-  "editor.autoIndent": false,
-  "editor.formatOnSave": true,
-  "editor.formatOnSaveTimeout": 2000,
-  "editor.minimap.enabled": false,
-  "editor.minimap.showSlider": "always",
-  "editor.renderIndentGuides": true,
-  "editor.renderLineHighlight": "all",
-  "editor.renderWhitespace": "all",
-  "editor.tabSize": 4,
-  "editor.codeLens": false,
-  "extensions.autoUpdate": true,
-  "extensions.ignoreRecommendations": true,
-  "files.associations": {
-    "*.erb": "html",
-    "Dockerfile.*": "dockerfile",
-    "*.sls": "yaml"
-  },
-  "files.exclude": {
-    "**/.git": true,
-    "**/.svn": true,
-    "**/.hg": true,
-    "**/CVS": true,
-    "**/.DS_Store": true,
-    "*.egg-info": true,
-    ".pytest_cache": true,
-    "**/__pycache__": true,
-    ".coverage": true
-  },
-  "files.insertFinalNewline": true,
-  "files.trimTrailingWhitespace": true,
-  "terminal.integrated.rendererType": "canvas",
-  "window.openFilesInNewWindow": "off",
-  "window.title": "${dirty}${activeEditorShort}${separator}${rootName}",
-  "workbench.activityBar.visible": false,
-  "workbench.editor.tabCloseButton": "off",
-  "workbench.colorCustomizations": {
-    "editor.lineHighlightBackground": "#eeeeee",
-    "editor.selectionHighlightBackground": "#ffdd00",
-    "editorBracketMatch.background": "#ffdd00",
-    "editorBracketMatch.border": "#ffdd00",
-    "statusBar.background": "#000000",
-    "terminal.background": "#222222",
-    "terminal.foreground": "#ffffff",
-    "terminal.selectionBackground": "#0011ff77"
-  },
-  "workbench.colorTheme": "Visual Studio Light",
-  "workbench.iconTheme": "vs-minimal",
-  "workbench.quickOpen.closeOnFocusLost": false,
-  "workbench.settings.editor": "json",
-  "git.enabled": false,
-  "[python]": {
-    "editor.rulers": [88]
-  },
-  "[ruby]": {
-    "editor.rulers": [80],
-    "editor.tabSize": 2
-  },
-  "[javascript]": {
-    "editor.rulers": [120]
-  },
-  "javascript.updateImportsOnFileMove.enabled": "always",
-  // Extensions
-  "todohighlight.isCaseSensitive": false,
-  "todohighlight.keywords": [
-    {
-      "text": "TODO GZL",
-      "color": "white",
-      "backgroundColor": "darkorange"
+    "breadcrumbs.enabled": true,
+    "editor.autoIndent": false,
+    "editor.formatOnSave": true,
+    "editor.formatOnSaveTimeout": 2000,
+    "editor.minimap.enabled": false,
+    "editor.minimap.showSlider": "always",
+    "editor.renderIndentGuides": true,
+    "editor.renderLineHighlight": "all",
+    "editor.renderWhitespace": "all",
+    "editor.tabSize": 4,
+    "editor.codeLens": false,
+    "extensions.autoUpdate": true,
+    "extensions.ignoreRecommendations": true,
+    "files.associations": {
+        "*.erb": "html",
+        "Dockerfile.*": "dockerfile",
+        "*.sls": "yaml"
     },
-    {
-      "text": "TODO",
-      "color": "white",
-      "backgroundColor": "darkorange"
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "*.egg-info": true,
+        ".pytest_cache": true,
+        "**/__pycache__": true,
+        ".coverage": true
     },
-    {
-      "text": "TODO:",
-      "color": "white",
-      "backgroundColor": "darkorange"
+    "files.insertFinalNewline": true,
+    "files.trimTrailingWhitespace": true,
+    "terminal.integrated.rendererType": "canvas",
+    "window.openFilesInNewWindow": "off",
+    "window.title": "${dirty}${activeEditorShort}${separator}${rootName}",
+    "workbench.activityBar.visible": false,
+    "workbench.editor.tabCloseButton": "off",
+    "workbench.colorCustomizations": {
+        "editor.lineHighlightBackground": "#eeeeee",
+        "editor.selectionHighlightBackground": "#ffdd00",
+        "editorBracketMatch.background": "#ffdd00",
+        "editorBracketMatch.border": "#ffdd00",
+        "statusBar.background": "#000000",
+        "terminal.background": "#222222",
+        "terminal.foreground": "#ffffff",
+        "terminal.selectionBackground": "#0011ff77"
     },
-    {
-      "text": "FIXME",
-      "color": "white",
-      "backgroundColor": "darkorange"
+    "workbench.colorTheme": "Visual Studio Light",
+    "workbench.iconTheme": "vs-minimal",
+    "workbench.quickOpen.closeOnFocusLost": false,
+    "workbench.settings.editor": "json",
+    "git.enabled": false,
+    "[python]": {
+        "editor.rulers": [
+            88
+        ]
     },
-    {
-      "text": "FIXME:",
-      "color": "white",
-      "backgroundColor": "darkorange"
-    }
-  ],
-  "python.formatting.provider": "black",
-  "python.linting.prospectorEnabled": true,
-  "python.linting.pylintEnabled": false,
-  "python.terminal.activateEnvironment": false
+    "[ruby]": {
+        "editor.rulers": [
+            80
+        ],
+        "editor.tabSize": 2
+    },
+    "[javascript]": {
+        "editor.rulers": [
+            120
+        ]
+    },
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    // Extensions
+    "todohighlight.isCaseSensitive": false,
+    "todohighlight.keywords": [
+        {
+            "text": "TODO GZL",
+            "color": "white",
+            "backgroundColor": "darkorange"
+        },
+        {
+            "text": "TODO",
+            "color": "white",
+            "backgroundColor": "darkorange"
+        },
+        {
+            "text": "TODO:",
+            "color": "white",
+            "backgroundColor": "darkorange"
+        },
+        {
+            "text": "FIXME",
+            "color": "white",
+            "backgroundColor": "darkorange"
+        },
+        {
+            "text": "FIXME:",
+            "color": "white",
+            "backgroundColor": "darkorange"
+        }
+    ],
+    "python.formatting.provider": "black",
+    "python.linting.prospectorEnabled": true,
+    "python.linting.pylintEnabled": false,
+    "python.terminal.activateEnvironment": false
 }
