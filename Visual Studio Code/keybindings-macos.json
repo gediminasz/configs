@@ -1,26 +1,14 @@
 [
     {
-        "key": "cmd+shift+]",
-        "command": "workbench.action.nextEditor"
-    },
-    {
-        "key": "cmd+shift+[",
-        "command": "workbench.action.previousEditor"
-    },
-    {
-        "key": "cmd+.",
+        "key": "ctrl+.",
         "command": "workbench.action.minimizeOtherEditors"
     },
     {
-        "key": "shift+cmd+.",
+        "key": "shift+ctrl+.",
         "command": "workbench.action.evenEditorWidths"
     },
     {
-        "key": "shift+cmd+x",
-        "command": "workbench.action.terminal.toggleTerminal"
-    },
-    {
-        "key": "shift+cmd+r",
+        "key": "shift+ctrl+r",
         "command": "workbench.action.tasks.runTask"
     },
     {
@@ -28,32 +16,20 @@
         "command": "workbench.action.openRecent"
     },
     {
-        "key": "cmd+shift+,",
+        "key": "ctrl+shift+,",
         "command": "workbench.action.toggleMaximizedPanel"
     },
     {
-        "key": "cmd+;",
+        "key": "ctrl+;",
         "command": "editor.action.showSnippets"
     },
     {
-        "key": "cmd+i",
+        "key": "ctrl+i",
         "command": "editor.action.triggerSuggest"
     },
     {
-        "key": "shift+cmd+f",
-        "command": "workbench.action.findInFiles"
-    },
-    {
-        "key": "cmd+shift+g",
-        "command": "workbench.view.scm"
-    },
-    {
-        "key": "cmd+r",
+        "key": "ctrl+r",
         "command": "workbench.action.tasks.runTask",
         "args": "Test on cursor"
     },
-    {
-        "key": "ctrl+m",
-        "command": "editor.action.toggleMinimap"
-    }
 ]
