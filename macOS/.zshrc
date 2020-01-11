@@ -1,7 +1,8 @@
 HISTSIZE=10000
 
-source ~/.git-prompt.sh
-PS1='\[\e[1m\] \w$(__git_ps1 " (%s)") \[\e[0m\]'
+setopt prompt_subst
+PROMPT='%B%~%b '
+RPROMPT='%F{green}$(git rev-parse --abbrev-ref HEAD 2> /dev/null)%f'
 
 alias ..='cd ..'
 alias sl='gls --almost-all --color --classify --human-readable -l -X'
