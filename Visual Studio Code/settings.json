@@ -1,15 +1,14 @@
 {
     "breadcrumbs.enabled": true,
-    "editor.autoIndent": false,
+    "editor.autoIndent": "none",
+    "editor.codeLens": false,
     "editor.formatOnSave": true,
-    "editor.formatOnSaveTimeout": 2000,
     "editor.minimap.enabled": false,
     "editor.minimap.showSlider": "always",
     "editor.renderIndentGuides": true,
     "editor.renderLineHighlight": "all",
     "editor.renderWhitespace": "all",
     "editor.tabSize": 4,
-    "editor.codeLens": false,
     "extensions.autoUpdate": true,
     "extensions.ignoreRecommendations": true,
     "files.associations": {
@@ -27,6 +26,7 @@
         ".pytest_cache": true,
         "**/__pycache__": true,
         ".coverage": true
+        // TODO venv
     },
     "files.insertFinalNewline": true,
     "files.trimTrailingWhitespace": true,
@@ -34,7 +34,6 @@
     "window.openFilesInNewWindow": "off",
     "window.title": "${dirty}${activeEditorShort}${separator}${rootName}",
     "workbench.activityBar.visible": false,
-    "workbench.editor.tabCloseButton": "off",
     "workbench.colorCustomizations": {
         "editor.lineHighlightBackground": "#eeeeee",
         "editor.selectionHighlightBackground": "#ffdd00",
@@ -46,10 +45,18 @@
         "terminal.selectionBackground": "#0011ff77"
     },
     "workbench.colorTheme": "Visual Studio Light",
+    "workbench.editor.limit.enabled": true,
+    "workbench.editor.limit.perEditorGroup": true,
+    "workbench.editor.tabCloseButton": "off",
     "workbench.iconTheme": "vs-minimal",
     "workbench.quickOpen.closeOnFocusLost": false,
     "workbench.settings.editor": "json",
     "git.enabled": false,
+    "terminal.integrated.shell.osx": "zsh",
+    //
+    //
+    // Language specifics
+    //
     "[python]": {
         "editor.rulers": [
             88
@@ -67,7 +74,10 @@
         ]
     },
     "javascript.updateImportsOnFileMove.enabled": "always",
+    //
+    //
     // Extensions
+    //
     "todohighlight.isCaseSensitive": false,
     "todohighlight.keywords": [
         {
@@ -96,8 +106,10 @@
             "backgroundColor": "darkorange"
         }
     ],
+    //
     "python.formatting.provider": "black",
-    "python.linting.prospectorEnabled": true,
-    "python.linting.pylintEnabled": false,
-    "python.terminal.activateEnvironment": false
+    "python.formatting.blackPath": "/Users/gediminaszlatkus/.pyenv/shims/black",
+    "python.linting.enabled": false,
+    "python.terminal.activateEnvironment": false,
+    "python.dataScience.useNotebookEditor": false,
 }
