@@ -17,16 +17,18 @@
         "*.sls": "yaml"
     },
     "files.exclude": {
-        "**/.git": true,
-        "**/.svn": true,
-        "**/.hg": true,
-        "**/CVS": true,
-        "**/.DS_Store": true,
-        "*.egg-info": true,
+        ".coverage": true,
         ".pytest_cache": true,
+        ".venv": true,
+        "*.egg-info": true,
         "**/__pycache__": true,
-        ".coverage": true
-        // TODO venv
+        "**/.DS_Store": true,
+        "**/.git": true,
+        "**/.hg": true,
+        "**/.svn": true,
+        "**/CVS": true,
+        "htmlcov": true,
+        "node_modules": true
     },
     "files.insertFinalNewline": true,
     "files.trimTrailingWhitespace": true,
@@ -74,42 +76,33 @@
         ]
     },
     "javascript.updateImportsOnFileMove.enabled": "always",
+    "markdown.preview.scrollEditorWithPreview": false,
     //
     //
     // Extensions
+    // Essentials: ESLint, Just Testing, Python, TODO Highlight
+    //
+    "justTesting.baseCommand": "poetry run pytest --disable-pytest-warnings --tb=native -vv",
+    "justTesting.runAllCommand": "{base} --cov --cov-branch --cov-report term --cov-report html -m 'not system and not integration'",
+    //
+    "python.dataScience.useNotebookEditor": false,
+    "python.formatting.provider": "black",
+    "python.linting.prospectorEnabled": true,
+    "python.linting.pylintEnabled": false,
+    "python.pythonPath": ".venv/bin/python",
+    "python.terminal.activateEnvironment": false,
     //
     "todohighlight.isCaseSensitive": false,
     "todohighlight.keywords": [
         {
             "text": "TODO GZL",
-            "color": "white",
-            "backgroundColor": "darkorange"
+            "color": "black",
+            "backgroundColor": "gold"
         },
         {
             "text": "TODO",
-            "color": "white",
-            "backgroundColor": "darkorange"
-        },
-        {
-            "text": "TODO:",
-            "color": "white",
-            "backgroundColor": "darkorange"
-        },
-        {
-            "text": "FIXME",
-            "color": "white",
-            "backgroundColor": "darkorange"
-        },
-        {
-            "text": "FIXME:",
-            "color": "white",
-            "backgroundColor": "darkorange"
+            "color": "black",
+            "backgroundColor": "gold"
         }
     ],
-    //
-    "python.formatting.provider": "black",
-    "python.formatting.blackPath": "/Users/gediminaszlatkus/.pyenv/shims/black",
-    "python.linting.enabled": false,
-    "python.terminal.activateEnvironment": false,
-    "python.dataScience.useNotebookEditor": false,
 }
