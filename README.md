@@ -1,15 +1,9 @@
-### Windows
+# Configs
 
-App | Path
---- | ---
-Sublime Text 3 | `C:\Users\USERNAME\AppData\Roaming\Sublime Text 3\Packages\User\`
-Visual Studio Code | `C:\Users\USERNAME\AppData\Roaming\Code\User\`
-PowerShell `$profile` | `C:\Users\USERNAME\Documents\WindowsPowerShell\Microsoft.PowerShell_profile.ps1`
+## Visual Studio Code
 
+To create `keybindings-macos.json` from `keybindings.json` run:
 
-### macOS
-
-App | Path
---- | ---
-Sublime Text 3 | `~/Library/Application Support/Sublime Text 3/Packages/User/`
-Visual Studio Code | `~/Library/Application Support/Code/User/`
+```
+sed 's/ctrl/cmd/g' keybindings.json > keybindings-macos.json
+```
