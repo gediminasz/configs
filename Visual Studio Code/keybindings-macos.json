@@ -1,35 +1,34 @@
 [
     {
-        "key": "ctrl+.",
-        "command": "workbench.action.minimizeOtherEditors"
-    },
-    {
-        "key": "shift+ctrl+.",
-        "command": "workbench.action.evenEditorWidths"
-    },
-    {
-        "key": "shift+ctrl+r",
-        "command": "workbench.action.tasks.runTask"
+        "key": "cmd+.",
+        "command": "workbench.action.toggleEditorWidths"
     },
     {
         "key": "alt+shift+p",
         "command": "workbench.action.openRecent"
     },
     {
-        "key": "ctrl+shift+,",
+        "key": "cmd+shift+,",
         "command": "workbench.action.toggleMaximizedPanel"
     },
     {
-        "key": "ctrl+;",
-        "command": "editor.action.showSnippets"
+        "key": "cmd+j",
+        "command": "editor.action.joinLines"
     },
     {
-        "key": "ctrl+i",
+        "key": "cmd+shift+r",
+        "command": "workbench.action.tasks.runTask"
+    },
+    {
+        "key": "cmd+r",
+        "command": "justTesting.runOnCursor"
+    },
+    {
+        "key": "cmd+i",
         "command": "editor.action.triggerSuggest"
     },
-    {
-        "key": "ctrl+r",
-        "command": "workbench.action.tasks.runTask",
-        "args": "Test on cursor"
-    },
+    // {
+    //     "key": "f12",
+    //     "command": "extension.searchCTags"
+    // }
 ]

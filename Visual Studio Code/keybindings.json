@@ -21,8 +21,11 @@
     },
     {
         "key": "ctrl+r",
-        "command": "workbench.action.tasks.runTask",
-        "args": "Test on cursor"
+        "command": "justTesting.runOnCursor"
+    },
+    {
+        "key": "ctrl+i",
+        "command": "editor.action.triggerSuggest"
     },
     // {
     //     "key": "f12",
