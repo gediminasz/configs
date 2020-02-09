@@ -1,27 +1,7 @@
 [
     {
-        "key": "ctrl+shift+]",
-        "command": "workbench.action.nextEditor"
-    },
-    {
-        "key": "ctrl+shift+[",
-        "command": "workbench.action.previousEditor"
-    },
-    {
         "key": "ctrl+.",
-        "command": "workbench.action.minimizeOtherEditors"
-    },
-    {
-        "key": "shift+ctrl+.",
-        "command": "workbench.action.evenEditorWidths"
-    },
-    {
-        "key": "shift+ctrl+x",
-        "command": "workbench.action.terminal.toggleTerminal"
-    },
-    {
-        "key": "shift+ctrl+r",
-        "command": "workbench.action.tasks.runTask"
+        "command": "workbench.action.toggleEditorWidths"
     },
     {
         "key": "alt+shift+p",
@@ -32,36 +12,20 @@
         "command": "workbench.action.toggleMaximizedPanel"
     },
     {
-        "key": "ctrl+;",
-        "command": "editor.action.showSnippets"
+        "key": "ctrl+j",
+        "command": "editor.action.joinLines"
     },
     {
-        "key": "ctrl+i",
-        "command": "editor.action.triggerSuggest"
-    },
-    {
-        "key": "shift+ctrl+f",
-        "command": "workbench.action.findInFiles"
-    },
-    {
-        "key": "ctrl+shift+g",
-        "command": "workbench.view.scm"
+        "key": "ctrl+shift+r",
+        "command": "workbench.action.tasks.runTask"
     },
     {
         "key": "ctrl+r",
         "command": "workbench.action.tasks.runTask",
         "args": "Test on cursor"
     },
-    {
-        "key": "ctrl+m",
-        "command": "editor.action.toggleMinimap"
-    },
-    {
-        "key": "ctrl+j",
-        "command": "editor.action.joinLines"
-    },
-    {
-        "key": "f12",
-        "command": "extension.searchCTags"
-    }
+    // {
+    //     "key": "f12",
+    //     "command": "extension.searchCTags"
+    // }
 ]
