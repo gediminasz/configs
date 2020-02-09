@@ -1,3 +1,6 @@
+# Usage: pip install -Ur essentials.txt
+
+black
 cdiff
 flake8
 ipdb
@@ -5,5 +8,7 @@ jupyter
 matplotlib
 numpy
 pandas
+pip
+poetry
 pudb
 requests
