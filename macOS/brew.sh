@@ -1,1 +1,1 @@
-brew install coreutils git pyenv
+brew install coreutils git pyenv watch
