@@ -5,7 +5,7 @@
         {
             "label": "Blame",
             "type": "shell",
-            "command": "git blame --date=relative ${file}",
+            "command": "git blame --date=relative '${file}'",
             "presentation": {
                 "panel": "new"
             },
@@ -14,7 +14,7 @@
         {
             "label": "Blame line",
             "type": "shell",
-            "command": "git blame --date=relative -L ${lineNumber},+1 ${file}",
+            "command": "git blame --date=relative -L ${lineNumber},+1 '${file}'",
             "problemMatcher": []
         },
         {
@@ -23,8 +23,8 @@
             "command": "ctags -R -f .tags",
             "problemMatcher": [],
             "presentation": {
-                "reveal": "silent",
-            },
+                "reveal": "silent"
+            }
         }
     ]
 }
