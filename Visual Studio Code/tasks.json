@@ -17,14 +17,14 @@
             "command": "git blame --date=relative -L ${lineNumber},+1 '${file}'",
             "problemMatcher": []
         },
-        // {
-        //     "label": "Run ctags",
-        //     "type": "shell",
-        //     "command": "ctags -R -f .tags",
-        //     "problemMatcher": [],
-        //     "presentation": {
-        //         "reveal": "silent"
-        //     }
-        // }
+        {
+            "label": "Run ctags",
+            "type": "shell",
+            "command": "ctags --python-kinds=-i -R -f.tags",
+            "problemMatcher": [],
+            "presentation": {
+                "reveal": "silent"
+            }
+        }
     ]
 }

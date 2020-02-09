@@ -62,7 +62,8 @@
     "[python]": {
         "editor.rulers": [
             88
-        ]
+        ],
+        // "editor.defaultFormatter": "SteefH.external-formatters"
     },
     "[ruby]": {
         "editor.rulers": [
@@ -80,7 +81,7 @@
     //
     //
     // Extensions
-    // Essentials: ESLint, Just Testing, Python, TODO Highlight
+    // Essentials: ESLint, Just Testing, Python, TODO Highlight, External formatters, CTags Support
     //
     "justTesting.baseCommand": "poetry run pytest --disable-pytest-warnings --tb=native -vv",
     "justTesting.runAllCommand": "{base} --cov --cov-branch --cov-report term --cov-report html -m 'not system and not integration'",
@@ -105,4 +106,13 @@
             "backgroundColor": "gold"
         }
     ],
+    //
+    // "externalFormatters.languages": {
+    //     "python": {
+    //         "command": "black",
+    //         "arguments": [
+    //             "-"
+    //         ]
+    //     }
+    // }
 }

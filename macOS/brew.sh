@@ -1,1 +1,1 @@
-brew install coreutils git pyenv watch
+brew install coreutils git pyenv watch ctags
