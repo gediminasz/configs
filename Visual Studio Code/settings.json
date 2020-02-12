@@ -109,10 +109,7 @@
     //
     // "externalFormatters.languages": {
     //     "python": {
-    //         "command": "black",
-    //         "arguments": [
-    //             "-"
-    //         ]
+    //         "command": "try-black"
     //     }
     // }
 }

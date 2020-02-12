@@ -1,0 +1,11 @@
+source=$(mktemp /tmp/try-black-source.XXXX)
+destination=$(mktemp /tmp/try-black-destination.XXXX)
+
+cat /dev/stdin > $source
+cat $source | black - > $destination
+
+if [ $? -ne 0 ]; then
+  cat $source
+else
+  cat $destination
+fi
