@@ -5,7 +5,7 @@ PROMPT='%B%~%b '
 RPROMPT='%F{green}$(git rev-parse --abbrev-ref HEAD 2> /dev/null)%f'
 
 alias ..='cd ..'
-alias sl='gls --almost-all --color --classify --human-readable -l -X'
+alias sl='gls --almost-all --color --classify --human-readable -l -X --group-directories-first'
 alias clean_pyc="find . -name '*.pyc' -delete"
 alias pr='poetry run'
 
