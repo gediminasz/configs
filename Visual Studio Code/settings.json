@@ -1,6 +1,5 @@
 {
     "breadcrumbs.enabled": true,
-    "editor.autoIndent": "none",
     "editor.codeLens": false,
     "editor.formatOnSave": true,
     "editor.minimap.enabled": false,
@@ -86,12 +85,12 @@
     "justTesting.baseCommand": "poetry run pytest --disable-pytest-warnings --tb=native -vv",
     "justTesting.runAllCommand": "{base} --cov --cov-branch --cov-report term --cov-report html -m 'not system and not integration'",
     //
-    "python.dataScience.useNotebookEditor": false,
-    "python.formatting.provider": "black",
-    "python.linting.prospectorEnabled": true,
-    "python.linting.pylintEnabled": false,
-    "python.pythonPath": ".venv/bin/python",
-    "python.terminal.activateEnvironment": false,
+    // "python.dataScience.useNotebookEditor": false,
+    // "python.formatting.provider": "black",
+    // "python.linting.prospectorEnabled": true,
+    // "python.linting.pylintEnabled": false,
+    // "python.pythonPath": ".venv/bin/python",
+    // "python.terminal.activateEnvironment": false,
     //
     "todohighlight.isCaseSensitive": false,
     "todohighlight.keywords": [
