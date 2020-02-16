@@ -81,7 +81,8 @@
     //
     //
     // Extensions
-    // Essentials: ESLint, Just Testing, Python, TODO Highlight, External formatters, CTags Support
+    // Essentials: ESLint, Just Testing, TODO Highlight
+    // Optional: Python, External formatters, CTags Support
     //
     "justTesting.baseCommand": "poetry run pytest --disable-pytest-warnings --tb=native -vv",
     "justTesting.runAllCommand": "{base} --cov --cov-branch --cov-report term --cov-report html -m 'not system and not integration'",
