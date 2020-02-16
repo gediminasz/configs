@@ -1,6 +1,5 @@
 {
     "breadcrumbs.enabled": true,
-    "editor.codeLens": false,
     "editor.formatOnSave": true,
     "editor.minimap.enabled": false,
     "editor.minimap.showSlider": "always",
@@ -62,7 +61,8 @@
         "editor.rulers": [
             88
         ],
-        // "editor.defaultFormatter": "SteefH.external-formatters"
+        // "editor.defaultFormatter": "SteefH.external-formatters",
+        "editor.codeLens": false
     },
     "[ruby]": {
         "editor.rulers": [
