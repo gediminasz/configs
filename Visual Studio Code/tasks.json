@@ -18,13 +18,25 @@
             "problemMatcher": []
         },
         {
-            "label": "Run ctags",
+            "label": "Prospector",
             "type": "shell",
-            "command": "ctags --python-kinds=-i -R -f.tags",
-            "problemMatcher": [],
+            "command": "poetry run prospector -o pylint ${file}",
             "presentation": {
-                "reveal": "silent"
+                "echo": true,
+                "reveal": "never",
+            },
+            "problemMatcher": {
+                "owner": "python",
+                "fileLocation": "relative",
+                "pattern": [
+                    {
+                        "regexp": "(.+):(\\d+): \\[.*\\] (.+)",
+                        "file": 1,
+                        "line": 2,
+                        "message": 3
+                    },
+                ]
             }
-        }
-    ]
+        },
+    ],
 }
