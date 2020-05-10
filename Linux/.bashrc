@@ -13,6 +13,7 @@ alias gs='g s'
 alias dca='d --cached'
 alias dbr='d master..'  # diff between master and a specified branch (e.g. dbr features/my_branch)
 alias dlc='git log -n 1 | git show -w | d'  # show diff of last commit (inspect changes before pushing)
+alias scale_fonts='gsettings set org.gnome.desktop.interface text-scaling-factor'
 
 # https://github.com/ymattw/ydiff
 function d() {
