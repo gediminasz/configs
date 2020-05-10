@@ -17,6 +17,7 @@
     "files.exclude": {
         ".coverage": true,
         ".pytest_cache": true,
+        ".tags": true,
         ".venv": true,
         "*.egg-info": true,
         "**/__pycache__": true,
@@ -47,6 +48,7 @@
     "workbench.colorTheme": "Visual Studio Light",
     "workbench.editor.limit.enabled": true,
     "workbench.editor.limit.perEditorGroup": true,
+    "workbench.editor.limit.value": 5,
     "workbench.editor.tabCloseButton": "off",
     "workbench.iconTheme": "vs-minimal",
     "workbench.quickOpen.closeOnFocusLost": false,
@@ -61,8 +63,7 @@
         "editor.rulers": [
             88
         ],
-        // "editor.defaultFormatter": "SteefH.external-formatters",
-        "editor.codeLens": false
+        "editor.defaultFormatter": "SteefH.external-formatters"
     },
     "[ruby]": {
         "editor.rulers": [
@@ -81,18 +82,11 @@
     //
     //
     // Extensions
-    // Essentials: ESLint, Just Testing, TODO Highlight
-    // Optional: Python, External formatters, CTags Support
+    // ESLint, Just Testing, TODO Highlight, Markdown Table Formatter, External formatters
     //
-    "justTesting.baseCommand": "poetry run pytest --disable-pytest-warnings --tb=native -vv",
-    "justTesting.runAllCommand": "{base} --cov --cov-branch --cov-report term --cov-report html -m 'not system and not integration'",
+    "justTesting.baseCommand": "poetry run pytest --disable-pytest-warnings --tb=native",
+    "justTesting.runAllCommand": "{base} --cov --cov-branch --cov-report term --cov-report html -m 'not system and not integration and not end_to_end'",
     //
-    // "python.dataScience.useNotebookEditor": false,
-    // "python.formatting.provider": "black",
-    // "python.linting.prospectorEnabled": true,
-    // "python.linting.pylintEnabled": false,
-    // "python.pythonPath": ".venv/bin/python",
-    // "python.terminal.activateEnvironment": false,
     //
     "todohighlight.isCaseSensitive": false,
     "todohighlight.keywords": [
@@ -108,9 +102,12 @@
         }
     ],
     //
-    // "externalFormatters.languages": {
-    //     "python": {
-    //         "command": "try-black"
-    //     }
-    // }
+    "externalFormatters.languages": {
+        "python": {
+            "command": "blackisort" // black -q - | isort -
+        }
+    },
+    //
+    "ctags-companion.documentSelector": "python",
+    "ctags-companion.command": "ctags -R --fields=+nKz -f .vscode/.tags --python-kinds=-i --languages=python"
 }
