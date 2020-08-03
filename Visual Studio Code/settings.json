@@ -9,6 +9,7 @@
     "editor.tabSize": 4,
     "extensions.autoUpdate": true,
     "extensions.ignoreRecommendations": true,
+    "workbench.editor.enablePreview": false,
     "files.associations": {
         "*.erb": "html",
         "Dockerfile.*": "dockerfile",
@@ -48,7 +49,7 @@
     "workbench.colorTheme": "Visual Studio Light",
     "workbench.editor.limit.enabled": true,
     "workbench.editor.limit.perEditorGroup": true,
-    "workbench.editor.limit.value": 5,
+    "workbench.editor.limit.value": 10,
     "workbench.editor.tabCloseButton": "off",
     "workbench.iconTheme": "vs-minimal",
     "workbench.quickOpen.closeOnFocusLost": false,
@@ -56,6 +57,7 @@
     "git.enabled": false,
     "terminal.integrated.shell.osx": "zsh",
     "task.quickOpen.showAll": true,
+    "search.useIgnoreFiles": false,
     //
     //
     // Language specifics
@@ -85,9 +87,6 @@
     //
     // Extensions
     // ESLint, Just Testing, TODO Highlight, Markdown Table Formatter, External formatters
-    //
-    "justTesting.baseCommand": "poetry run pytest --disable-pytest-warnings --tb=native",
-    "justTesting.runAllCommand": "{base} --cov --cov-branch --cov-report term --cov-report html -m 'not system and not integration and not end_to_end'",
     //
     "todohighlight.isCaseSensitive": false,
     "todohighlight.keywordsPattern": "(TODO|console\\.log).*",
