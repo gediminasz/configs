@@ -4,6 +4,7 @@ black
 cdiff
 flake8
 ipdb
+isort
 jupyter
 matplotlib
 numpy
