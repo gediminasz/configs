@@ -1,0 +1,11 @@
+services:
+  jupyter:
+    container_name: jupyter
+    image: jupyter/minimal-notebook
+    ports:
+      - "8889:8888"
+    volumes:
+      - jupyter:/home/jovyan
+
+volumes:
+  jupyter:
