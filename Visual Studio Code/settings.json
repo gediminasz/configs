@@ -1,17 +1,14 @@
 {
     "breadcrumbs.enabled": true,
     "editor.formatOnSave": true,
-    "editor.minimap.enabled": false,
+    "editor.minimap.maxColumn": 80,
     "editor.minimap.showSlider": "always",
-    "editor.renderIndentGuides": true,
     "editor.renderLineHighlight": "all",
     "editor.renderWhitespace": "all",
     "editor.tabSize": 4,
     "extensions.autoUpdate": true,
     "extensions.ignoreRecommendations": true,
-    "workbench.editor.enablePreview": false,
     "files.associations": {
-        "*.erb": "html",
         "Dockerfile.*": "dockerfile",
         "*.sls": "yaml"
     },
@@ -30,11 +27,17 @@
         "htmlcov": true,
         "node_modules": true
     },
+    "files.watcherExclude": {
+        "**/.git/objects/**": true,
+        "**/.git/subtree-cache/**": true,
+        "**/node_modules/**": true,
+        "**/.hg/store/**": true,
+        "**/.venv/**": true
+    },
     "files.insertFinalNewline": true,
     "files.trimTrailingWhitespace": true,
-    "terminal.integrated.rendererType": "canvas",
     "window.openFilesInNewWindow": "off",
-    "window.title": "${dirty}${activeEditorShort}${separator}${rootName}",
+    "window.title": "${dirty}${activeEditorShort}${separator}${remoteName}${separator}${rootName}",
     "workbench.activityBar.visible": false,
     "workbench.colorCustomizations": {
         "editor.lineHighlightBackground": "#eeeeee",
@@ -49,15 +52,15 @@
     "workbench.colorTheme": "Visual Studio Light",
     "workbench.editor.limit.enabled": true,
     "workbench.editor.limit.perEditorGroup": true,
-    "workbench.editor.limit.value": 10,
+    "workbench.editor.limit.value": 5,
     "workbench.editor.tabCloseButton": "off",
     "workbench.iconTheme": "vs-minimal",
     "workbench.quickOpen.closeOnFocusLost": false,
     "workbench.settings.editor": "json",
     "git.enabled": false,
     "terminal.integrated.shell.osx": "zsh",
+    "terminal.integrated.scrollback": 10000,
     "task.quickOpen.showAll": true,
-    "search.useIgnoreFiles": false,
     //
     //
     // Language specifics
@@ -65,14 +68,7 @@
     "[python]": {
         "editor.rulers": [
             88
-        ],
-        "editor.defaultFormatter": "SteefH.external-formatters"
-    },
-    "[ruby]": {
-        "editor.rulers": [
-            80
-        ],
-        "editor.tabSize": 2
+        ]
     },
     "[javascript]": {
         "editor.rulers": [
@@ -85,8 +81,19 @@
     "markdown.preview.scrollPreviewWithEditor": false,
     //
     //
-    // Extensions
-    // ESLint, Just Testing, TODO Highlight, Markdown Table Formatter, External formatters
+    // Extensions:
+    // - Ctags Companion
+    // - ESLint
+    // - Just Testing
+    // - Markdown Preview Mermaid Support
+    // - Markdown Table Formatter
+    // - Save and Run
+    // - TODO Highlight
+    //
+    "ctags-companion.documentSelector": [
+        "python"
+    ],
+    "ctags-companion.command": "ctags -R --fields=+nKz -f .vscode/.tags --python-kinds=-i --languages=python",
     //
     "todohighlight.isCaseSensitive": false,
     "todohighlight.keywordsPattern": "(TODO|console\\.log).*",
@@ -95,14 +102,18 @@
         "backgroundColor": "gold"
     },
     //
-    "externalFormatters.languages": {
-        "python": {
-            "command": "blackisort" // black -q - | isort -
-        }
-    },
-    //
-    "ctags-companion.documentSelector": [
-        "python"
-    ],
-    "ctags-companion.command": "ctags -R --fields=+nKz -f .vscode/.tags --python-kinds=-i --languages=python"
+    "saveAndRun": {
+        "commands": [
+            {
+                "match": "\\.py$",
+                "cmd": "black ${file}",
+                "silent": true
+            },
+            {
+                "match": "\\.py$",
+                "cmd": "isort --profile black ${file}",
+                "silent": true
+            }
+        ]
+    }
 }
