@@ -1,7 +1,6 @@
-# Usage: pip install -Ur essentials.txt
+# Usage: pip install -Ur Python/essentials.txt
 
 black
-cdiff
 flake8
 ipdb
 isort
@@ -13,3 +12,4 @@ pip
 poetry
 pudb
 requests
+ydiff

@@ -19,9 +19,9 @@ function d() {
     cols=$(tput cols)
     if [ "$cols" -gt 199 ]; then
         width=$(expr $cols / 2)
-        cdiff -s -w $width --ignore-all-space $@;
+        ydiff -s -w $width --ignore-all-space $@;
     else
-        cdiff --ignore-all-space $@;
+        ydiff --ignore-all-space $@;
     fi
 }
 
