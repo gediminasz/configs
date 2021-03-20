@@ -1,8 +1,6 @@
 # Usage: pip install -Ur Python/essentials.txt
 
 black
-flake8
-ipdb
 isort
 jupyter
 matplotlib
