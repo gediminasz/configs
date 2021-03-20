@@ -80,8 +80,7 @@
     "[javascript]": {
         "editor.rulers": [
             120
-        ],
-        "justTesting.baseCommand": "npm test"
+        ]
     },
     "javascript.format.semicolons": "insert",
     "javascript.updateImportsOnFileMove.enabled": "always",
