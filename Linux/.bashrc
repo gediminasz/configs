@@ -7,24 +7,29 @@ alias ..='cd ..'
 alias sl='ls --almost-all --color --classify --human-readable -l -X'
 alias clean_pyc="find . -name '*.pyc' -delete"
 alias pr='poetry run'
+alias h='history | grep -i'
 
 alias g='git'
 alias gs='g s'
 alias dca='d --cached'
 alias dbr='d master..'  # diff between master and a specified branch (e.g. dbr features/my_branch)
-alias dlc='git log -n 1 | git show -w | d'  # show diff of last commit (inspect changes before pushing)
-alias scale_fonts='gsettings set org.gnome.desktop.interface text-scaling-factor'
+alias dlc='git log -n 1 | git show -pw --stat | d'  # show diff of last commit (inspect changes before pushing)
+
+alias dsrdump='dsrdump +C +Pl'
+alias dcmdump='dcmdump +C'
 
 # https://github.com/ymattw/ydiff
 function d() {
     cols=$(tput cols)
     if [ "$cols" -gt 199 ]; then
         width=$(expr $cols / 2)
-        cdiff -s -w $width --ignore-all-space $@;
+        ydiff -s -w $width --ignore-all-space --stat -p $@;
     else
-        cdiff --ignore-all-space $@;
+        ydiff --ignore-all-space --stat -p $@;
     fi
 }
+
+export PYTHONBREAKPOINT="pudb.set_trace"
 
 # https://github.com/pyenv/pyenv
 export PATH="$HOME/.pyenv/bin:$PATH"
