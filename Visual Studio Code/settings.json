@@ -58,7 +58,6 @@
     "workbench.quickOpen.closeOnFocusLost": false,
     "workbench.settings.editor": "json",
     "git.enabled": false,
-    "terminal.integrated.shell.osx": "zsh",
     "terminal.integrated.scrollback": 10000,
     "task.quickOpen.showAll": true,
     //
