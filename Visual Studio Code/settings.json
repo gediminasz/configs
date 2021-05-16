@@ -95,19 +95,11 @@
     // - Markdown Preview Mermaid Support
     // - Markdown Table Formatter
     // - Save and Run
-    // - TODO Highlight
     //
     "ctags-companion.documentSelector": [
         "python"
     ],
     "ctags-companion.command": "ctags -R --fields=+nKz -f .vscode/.tags --python-kinds=-i --languages=python",
-    //
-    "todohighlight.isCaseSensitive": false,
-    "todohighlight.keywordsPattern": "(TODO|console\\.log).*",
-    "todohighlight.defaultStyle": {
-        "color": "black",
-        "backgroundColor": "gold"
-    },
     //
     "saveAndRun": {
         "commands": [
