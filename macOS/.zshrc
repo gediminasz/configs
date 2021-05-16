@@ -1,8 +1,14 @@
 HISTSIZE=10000
 
 setopt prompt_subst
-PROMPT='%B%~%b '
-RPROMPT='%F{green}$(git rev-parse --abbrev-ref HEAD 2> /dev/null)%f'
+function gitprompt() {
+    branch=$(git rev-parse --abbrev-ref HEAD 2> /dev/null)
+    if [ -n "$branch" ]
+    then
+        echo "($branch) "
+    fi
+}
+PROMPT='%~ %B$(gitprompt)%b'
 
 alias ..='cd ..'
 alias sl='gls --almost-all --color --classify --human-readable -l -X --group-directories-first'
