@@ -34,13 +34,6 @@
         "**/.hg/store/**": true,
         "**/.venv/**": true
     },
-    "search.exclude": {
-        "**/node_modules": true,
-        ".slskit": true,
-        ".vscode/.tags": true,
-        "poetry.lock": true
-    },
-    "search.useIgnoreFiles": false,
     "files.insertFinalNewline": true,
     "files.trimTrailingWhitespace": true,
     "window.openFilesInNewWindow": "off",
