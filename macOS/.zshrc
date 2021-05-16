@@ -5,7 +5,9 @@ function gitprompt() {
     branch=$(git rev-parse --abbrev-ref HEAD 2> /dev/null)
     if [ -n "$branch" ]
     then
-        echo "($branch) "
+        changes_present=$(git diff --quiet || echo "%F{red}•%f")
+        cached_changes_present=$(git diff --cached --quiet || echo "%F{green}•%f")
+        echo "($branch$changes_present$cached_changes_present) "
     fi
 }
 PROMPT='%~ %B$(gitprompt)%b'
