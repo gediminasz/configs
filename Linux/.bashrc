@@ -1,7 +1,21 @@
 HISTSIZE=10000
 
-source ~/.git-prompt.sh
-PS1='\[\e[1m\] \w$(__git_ps1 " (%s)") \[\e[0m\]'
+RED="\e[31m"
+GREEN="\e[32m"
+ENDCOLOR="\e[0m"
+function gitprompt() {
+    branch=$(git rev-parse --abbrev-ref HEAD 2> /dev/null)
+    if [ -n "$branch" ]
+    then
+        changes_present=$(git diff --quiet || echo -e "${RED}•${ENDCOLOR}")
+        cached_changes_present=$(git diff --cached --quiet || echo -e "${GREEN}•${ENDCOLOR}")
+        echo "($branch$changes_present$cached_changes_present) "
+    fi
+}
+# \[\e[1m\] = bold
+# \w = current path
+# \[\e[0m\] = end bold
+PS1='\[\e[1m\]\w $(gitprompt)\[\e[0m\]'
 
 alias ..='cd ..'
 alias sl='ls --almost-all --color --classify --human-readable -l -X'
