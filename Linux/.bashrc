@@ -1,8 +1,8 @@
 HISTSIZE=10000
 
-RED="\e[31m"
-GREEN="\e[32m"
-ENDCOLOR="\e[0m"
+RED='\033[0;31m'
+GREEN='\033[0;32m'
+ENDCOLOR='\033[0m'
 function gitprompt() {
     branch=$(git rev-parse --abbrev-ref HEAD 2> /dev/null)
     if [ -n "$branch" ]
